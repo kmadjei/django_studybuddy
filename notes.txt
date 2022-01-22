@@ -3,4 +3,7 @@
 >> pip install django
 >> django-admin --> admin commands
 >> django-admin startproject studybud
->> stopped 25 min
+>> python manage.py runserver
+>> python manage.py startapp base
+
+https://docs.djangoproject.com/en/4.0/ref/templates/language/
