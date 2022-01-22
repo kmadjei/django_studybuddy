@@ -1,6 +1,0 @@
->> python -m venv venv
->> env\scripts\activate
->> pip install django
->> django-admin --> admin commands
->> django-admin startproject studybud
->> stopped 25 min
