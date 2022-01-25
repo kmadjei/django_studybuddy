@@ -24,6 +24,10 @@ class Room(models.Model):
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
 
+    class Meta:
+        # makes the blog message display latest one at the top
+        ordering = ['-updated', '-created']
+
     # __str__ -> returns the string representation of the object. This method is called when print() or str() function is invoked on an object
     def __str__(self):
         return self.name

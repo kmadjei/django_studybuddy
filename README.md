@@ -1,7 +1,4 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-![CBC Logo](https://canadianbusinesscollege.com/wp-content/uploads/2020/09/CBC-New-Logo-Website.png)
-
-# Your Project's Name
+# Django - Studybuddy
 
 One or two paragraphs providing an overview of your project.
 
