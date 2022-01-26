@@ -4,6 +4,9 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    path('login/', views.loginPage, name='login'),
+
+
     path('', views.home, name='home'),
     # dynamic routing -> room/<str:pk> ??
     path('room/<str:pk>', views.room, name='room'),

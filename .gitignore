@@ -9,5 +9,3 @@ node_modules/
 .github/
 notes.txt
 *.sqlite3
-env.py
-myvenv/
