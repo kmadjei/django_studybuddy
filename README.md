@@ -22,7 +22,9 @@ In this section, you should go over the different parts of your project, and des
 - only a user can edit their own post
 - if user is not logged in. He/she is not allowed to be on the chat room home page
 - use conditional template for displaying login and register form
-- added login, logout, restricted pages, and registeration
+- added login, logout, restricted pages, and registration
+- user cannot revisit login page via manual url while logged in already
+- only users can view chat activity
  
 ### Existing Features
 - Feature 1 - allows users X to achieve Y, by having them fill out Z
@@ -82,6 +84,10 @@ If this section grows too long, you may want to split it off into a separate fil
 - Typos in functions and URL routes
     - dealt with these situation during the code along session by evaluating the error report provided by the Django server
     - investigated the source of the errors reported by django and corrected spelling typos
+
+- Flash `message` object from `django.contrib` conflicted with message variable passed in the view for `def room()`, as 
+    - Messages were displaying close to the navbar elements instead of the `div` for the chat
+    - problem fixed by changing `messages` variable to `room_messages`
 
 ## Deployment
 
