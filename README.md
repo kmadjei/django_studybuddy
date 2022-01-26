@@ -33,17 +33,20 @@ In addition, you may also use this section to discuss plans for additional featu
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
-- [HTML](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+- [HTML](https://www.w3schools.com/html/default.asp)
+    - The project uses **HTML** to produce the web contents.
 
-- [CSS](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+- [CSS](https://www.w3schools.com/CSS/default.asp)
+    - The project uses **CSS** to create visually pleasing content.
 
-- [Python](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+- [Bootstrap 4.4](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+    - The project uses **Bootstrap** version 4.4, frontend design framework, to produce better UI/UX for mobile first development.
 
-- [Django](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+- [Python](https://www.python.org/doc/)
+    - The project uses **Python** to process server side queries, such as processing payments and user authentications.
+
+- [Django](https://www.djangoproject.com/)
+    - The project uses the **Django** , Python Full Stack framework, to simplify and speedup the development of a Full Stack Web Application.
 
 - [Django REST Framework](https://www.django-rest-framework.org/)
     - The project uses **JQuery** to simplify DOM manipulation.
@@ -67,6 +70,12 @@ In addition, you should mention in this section how your project looks and works
 You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
+
+### Bugs Encountered
+
+- Typos in functions and URL routes
+    - dealt with these situation during the code along session by evaluating the error report provided by the Django server
+    - investigated the source of the errors reported by django and corrected spelling typos
 
 ## Deployment
 
