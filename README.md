@@ -25,6 +25,8 @@ In this section, you should go over the different parts of your project, and des
 - added login, logout, restricted pages, and registration
 - user cannot revisit login page via manual url while logged in already
 - only users can view chat activity
+- Added activity feed to chat home page
+- included delete functionality in activity feed 
  
 ### Existing Features
 - Feature 1 - allows users X to achieve Y, by having them fill out Z
@@ -88,6 +90,11 @@ If this section grows too long, you may want to split it off into a separate fil
 - Flash `message` object from `django.contrib` conflicted with message variable passed in the view for `def room()`, as 
     - Messages were displaying close to the navbar elements instead of the `div` for the chat
     - problem fixed by changing `messages` variable to `room_messages`
+
+- Using `{% include 'activity_component.html' %}` in the **Django base** displayed error loading page after refreshing the server. The Django template engine could not find the required HTML component. results in:
+    ```TemplateDoesNotExist at /    activity_component.html```
+    - Issue resolved by including the base directory route --> `{% include 'base/activity_component.html' %}`
+
 
 ## Deployment
 

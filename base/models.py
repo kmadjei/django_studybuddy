@@ -40,6 +40,10 @@ class Message(models.Model):
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
 
+    class Meta:
+        # makes the blog message display latest one at the top
+        ordering = ['-updated', '-created']
+
     def __str__(self):
         # return first 50 characters of body string
         return self.body[0:50]
