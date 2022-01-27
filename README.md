@@ -92,7 +92,11 @@ If this section grows too long, you may want to split it off into a separate fil
     - problem fixed by changing `messages` variable to `room_messages`
 
 - Using `{% include 'activity_component.html' %}` in the **Django base** displayed error loading page after refreshing the server. The Django template engine could not find the required HTML component. results in:
-    ```TemplateDoesNotExist at /    activity_component.html```
+
+    ```
+    TemplateDoesNotExist at /
+        activity_component.html
+    ```
     - Issue resolved by including the base directory route --> `{% include 'base/activity_component.html' %}`
 
 
