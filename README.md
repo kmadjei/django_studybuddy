@@ -3,6 +3,7 @@
 One or two paragraphs providing an overview of your project.
 
 Essentially, this part is your sales pitch.
+
 👉 
  
 ## UX
@@ -98,6 +99,11 @@ If this section grows too long, you may want to split it off into a separate fil
         activity_component.html
     ```
     - Issue resolved by including the base directory route --> `{% include 'base/activity_component.html' %}`
+
+- submitting a message in the study room doesn't send any data.
+    - Updated the form `action` value to ('') and the `method` value to ('POST')
+    - added a name attribute of **body** to the `input` element 
+    - form updated the room with current message sent after pressing the **enter** key
 
 
 ## Deployment
