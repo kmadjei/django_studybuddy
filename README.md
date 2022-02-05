@@ -28,6 +28,7 @@ In this section, you should go over the different parts of your project, and des
 - only users can view chat activity
 - Added activity feed to chat home page
 - included delete functionality in activity feed 
+- added a rest api functionality for users that wants to retrieve information from the app
  
 ### Existing Features
 - Feature 1 - allows users X to achieve Y, by having them fill out Z
